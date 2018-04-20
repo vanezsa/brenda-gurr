@@ -2,6 +2,11 @@
 * {
   box-sizing: border-box; }
 
+.c-bottom {
+  position: absolute;
+  bottom: 0;
+  font-size: 14px; }
+
 body, .c-text-title-1 {
   font-size: 20px;
   color: #201429;
@@ -98,15 +103,24 @@ a, a:hover {
   height: 190px;
   position: inherit;
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-top: 200px; }
+  background-size: cover; }
+
+.c-parent {
+  position: relative;
+  height: 190px;
+  margin-top: 220px; }
+
+.c-child {
+  position: absolute;
+  bottom: 0;
+  margin-left: -20%; }
 
 /*.custom-bg-1 {
-    background: url(img/profile-decor.svg);
-    height: 190px;
-    position: inherit;
-    background-repeat: no-repeat;
-    background-size: cover;
+background: url(img/profile-decor.svg);
+height: 190px;
+position: inherit;
+background-repeat: no-repeat;
+background-size: cover;
 }*/
 /*.custom-bg-2 {
 background-image: url("img/bg05.png");
@@ -121,9 +135,6 @@ height: auto;
 
 .c-margin-1 {
   margin-top: -88px; }
-
-.c-margin-2 {
-  margin-top: -150px; }
 
 /**** FLYOUT MENU ****/
 body {
@@ -428,13 +439,19 @@ text-transform: uppercase;
 
 @media (max-width: 1199px) {
   .c-margin-0 {
-    margin-top: -150px; } }
+    margin-top: -150px; }
+
+  .c-child {
+    margin-left: -23%; } }
 @media (max-width: 991px) {
   .c-text-script-1 {
     font-size: 50px; }
 
   .c-margin-0 {
-    margin-left: 455px; } }
+    margin-left: 455px; }
+
+  .c-child {
+    margin-left: -35%; } }
 @media (max-width: 767px) {
   .navbar-nav {
     padding-left: 20px; }
@@ -442,21 +459,27 @@ text-transform: uppercase;
   .c-hide {
     display: none; }
 
-  .c-margin-2 {
-    margin-top: -200px; }
-
   .c-padding-5 {
     margin-top: -120px; }
 
   .c-margin-0 {
     margin-left: 240px;
-    margin-top: 0px; } }
+    margin-top: 0px; }
+
+  .c-child {
+    margin-left: -50%; }
+
+  .c-parent {
+    margin-top: 160px; } }
 @media (max-width: 575px) {
   .txt-ctr {
     text-align: center !important; }
 
   .c-text-script-1 {
-    font-size: 40px; } }
+    font-size: 40px; }
+
+  .c-parent {
+    margin-top: 150px; } }
 @media screen and (max-height: 450px) {
   .overlay a {
     font-size: 20px; }
@@ -484,6 +507,9 @@ text-transform: uppercase;
     line-height: 16px; }
 
   .c-margin-3 {
-    margin-top: 280px; } }
+    margin-top: 280px; }
+
+  .c-parent {
+    margin-top: 30px; } }
 
 /*# sourceMappingURL=main.css.map */
