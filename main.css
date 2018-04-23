@@ -21,7 +21,8 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; }
+  background-size: cover;
+  min-height: 100%; }
 
 .c-text-bold {
   font-weight: 700; }
@@ -115,6 +116,18 @@ a, a:hover {
   bottom: 0;
   margin-left: -20%; }
 
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.site-content {
+  flex: 1;
+  display: inherit; }
+
+.custom-c {
+  display: inline-block; }
+
 /*.custom-bg-1 {
 background: url(img/profile-decor.svg);
 height: 190px;
@@ -139,7 +152,8 @@ height: auto;
 /**** FLYOUT MENU ****/
 body {
   position: relative;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  height: 100%; }
 
 html {
   height: 100%; }
@@ -463,14 +477,21 @@ text-transform: uppercase;
     margin-top: -120px; }
 
   .c-margin-0 {
-    margin-left: 240px;
-    margin-top: 0px; }
+    margin-left: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px; }
 
   .c-child {
     margin-left: -50%; }
 
   .c-parent {
-    margin-top: 160px; } }
+    margin-top: 160px; }
+
+  .c-hide-1 {
+    display: none; }
+
+  .c-margin-3 {
+    margin-top: 470px; } }
 @media (max-width: 575px) {
   .txt-ctr {
     text-align: center !important; }
@@ -489,9 +510,6 @@ text-transform: uppercase;
     top: 15px;
     right: 35px; } }
 @media (max-width: 540px) {
-  .c-hide-1 {
-    display: none; }
-
   .c-margin-0 {
     margin-left: 0px;
     margin-top: 15px; }

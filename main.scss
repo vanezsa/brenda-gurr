@@ -35,6 +35,7 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    min-height: 100%;
 }
 
 
@@ -133,6 +134,21 @@ a, a:hover {color: $clr-link;}
     margin-left: -20%;
 }
 
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.site-content {
+    flex: 1;
+    display: inherit;
+}
+
+.custom-c {
+   display:  inline-block;
+}
+//.fixed-bottom {z-index: 1;}
 /*.custom-bg-1 {
 background: url(img/profile-decor.svg);
 height: 190px;
@@ -157,10 +173,13 @@ height: auto;
 /**** FLYOUT MENU ****/
 body {
     position: relative;
-    overflow-x: hidden; }
+    overflow-x: hidden;
+    height: 100%;
+}
 
 html {
-    height: 100%; }
+    height: 100%;}
+
 
 .nav .open > a,
 .nav .open > a:hover,
@@ -477,9 +496,11 @@ text-transform: uppercase;
     .c-hide {display: none;}
     //.c-margin-2 {margin-top: -200px;}
     .c-padding-5 {margin-top: -120px;}
-    .c-margin-0 {margin-left: 240px; margin-top: 0px;}
+    .c-margin-0 {margin-left: 0px; margin-top: 50px; margin-bottom: 50px;}
     .c-child {margin-left: -50%;}
     .c-parent {margin-top: 160px;}
+     .c-hide-1 {display: none;} 
+    .c-margin-3 {margin-top: 470px;}
 }
 
 @media (max-width: 575px) {
@@ -498,7 +519,6 @@ text-transform: uppercase;
 }
 
 @media (max-width: 540px) {
-    .c-hide-1 {display: none;} 
     .c-margin-0 {margin-left: 0px; margin-top: 15px;}
     .c-margin-3 {margin-top: 380px;}
 }
